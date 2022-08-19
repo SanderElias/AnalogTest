@@ -5,7 +5,14 @@
   "projects": {
     "my-app": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "css",
+          "inlineStyle": false,
+          "inlineTemplate": true,
+          "standalone": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,5 +20,8 @@
         "targets": {}
       }
     }
+  },
+  "cli": {
+    "analytics": "45f68d99-2714-4689-8ed3-de5ad049343b"
   }
 }
